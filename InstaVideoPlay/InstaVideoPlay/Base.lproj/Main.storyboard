@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaVideoPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-xn-6t1">
+                                <rect key="frame" x="0.0" y="92.5" width="414" height="769.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="l2x-La-1HH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ek5-Nh-ZdI"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="Yzg-MI-APT"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-7y-KAO">
+                                <rect key="frame" x="16" y="52" width="382" height="32.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="InstaVideoPlay">
+                                        <attributes>
+                                            <font key="NSFont" size="28" name="ArialRoundedMTBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6ee-7y-KAO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Gb5-SP-swQ"/>
+                            <constraint firstItem="w7x-xn-6t1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q4P-RS-Qqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ee-7y-KAO" secondAttribute="trailing" constant="16" id="SMN-yF-ZZP"/>
+                            <constraint firstItem="w7x-xn-6t1" firstAttribute="top" secondItem="6ee-7y-KAO" secondAttribute="bottom" constant="8" id="XtV-Ug-7RE"/>
+                            <constraint firstItem="6ee-7y-KAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cOn-pQ-q4c"/>
+                            <constraint firstItem="w7x-xn-6t1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lvm-dT-1QC"/>
+                            <constraint firstItem="w7x-xn-6t1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tce-Gg-glH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="w7x-xn-6t1" id="MSr-s1-I3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
